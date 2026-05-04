@@ -1,0 +1,11 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+.vscode-test/
