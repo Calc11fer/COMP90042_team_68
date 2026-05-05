@@ -9,3 +9,5 @@ ENV/
 *.code-workspace
 .history/
 .vscode-test/
+.DS_Store
+data/evidence.json
