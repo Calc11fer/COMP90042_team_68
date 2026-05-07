@@ -9,3 +9,25 @@ ENV/
 *.code-workspace
 .history/
 .vscode-test/
+
+# Local OS/editor files
+.DS_Store
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Large local data files
+data/evidence.json
+
+# Model artefacts and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+checkpoints/
+models/
+
+# Generated evaluation outputs
+evaluation/results/
