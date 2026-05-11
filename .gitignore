@@ -9,3 +9,6 @@ ENV/
 *.code-workspace
 .history/
 .vscode-test/
+
+# the evidence json file
+evidence.json
