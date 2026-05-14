@@ -22,6 +22,8 @@ __pycache__/
 
 # Large local data files
 data/evidence.json
+data/processed/
+processed/
 
 # Model artefacts and checkpoints
 *.pt
@@ -34,3 +36,4 @@ models/
 
 # Generated evaluation outputs
 evaluation/results/
+evaluation_outputs/

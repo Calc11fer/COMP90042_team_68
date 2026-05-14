@@ -1,2 +1,12 @@
 numpy
 matplotlib
+datasets
+transformers
+accelerate
+evaluate
+sentencepiece
+torch
+rank-bm25
+sentence-transformers
+scikit-learn
+tqdm
