@@ -89,12 +89,25 @@ Ask the retrieval owner to provide:
 - A dev prediction JSON with retrieved evidence IDs for every dev claim.
 - The retrieval method name, top-k value, and any reranking method.
 - Whether the retrieval output is ranked and whether duplicates are possible.
+- Candidate pool size, RRF constant if used, dense model name, and cross-encoder
+  model name if used.
+- Whether any label in the file is only a placeholder, for example all
+  `SUPPORTS`.
 
 Ask the classification owner to provide:
 
 - A dev prediction JSON with `claim_label` for every dev claim.
 - The exact input format used for classification.
 - Model name, random seed, key hyperparameters, and training split.
+- Whether the classifier used gold evidence, retrieved evidence, or both.
+- Runtime/hardware, saved checkpoint location if any, and training logs.
+
+Before adding a run to the report, classify it as one of:
+
+- `format check`
+- `retrieval-only`
+- `classification diagnostic`
+- `end-to-end`
 
 Shared naming convention:
 
@@ -115,3 +128,6 @@ Use one row per system variant:
 | Run | Retrieval | Classifier | Top-k | F | A | H_FA | Notes |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
 | official_baseline | provided baseline | random | 6 | 0.338 | 0.351 | 0.344 | diagnostic only |
+
+For report planning and interpretation rules, see
+`evaluation/report_evaluation_notes.md`.
